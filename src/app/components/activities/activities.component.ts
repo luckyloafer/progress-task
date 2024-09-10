@@ -15,7 +15,7 @@ export class ActivitiesComponent implements OnInit {
   activities: string[] = ['a', 'b', 'c'];
   selctedTowerInd: number = -1;
   selectedActivityInd: number = -1;
-  open: boolean = true;
+  open: boolean = false;
   //bug:boolean = false;
   ngOnInit(): void {
     this.getTowers();
@@ -36,6 +36,14 @@ export class ActivitiesComponent implements OnInit {
     console.log(this.selectedActivityInd);
   }
   toggleDropdown(towerInd: number, tower: string) {
+
+    if(this.selctedTowerInd==towerInd){
+      this.open = !this.open
+    }
+    else{
+      this.selctedTowerInd = towerInd;
+      this.open = true;
+    }
     this.selctedTowerInd = towerInd;
     //this.open = !this.open;
     console.log(this.selctedTowerInd);

@@ -1,16 +1,24 @@
+<div style="height: 100%; ">
+
 <div class="searchCont">
   <i class="ph ph-magnifying-glass searchIcon"></i>
   <input placeholder="Search Activities" type="search" />
 </div>
 
-<div class="towers-cont">
-  <div *ngFor="let tower of towers; let i = index">
+<div style="overflow-y: scroll;scrollbar-width: none; padding:10px 0px;height: calc(100% - 180px)" class="towers-cont">
+  <div  *ngFor="let tower of towers; let i = index">
     <!-- <div (click)="toggleDropdown(i)"> -->
-    <div (click)="toggleDropdown(i, tower)">
-      <div class="tower">
+    <div  (click)="toggleDropdown(i, tower)">
+      <div [ngClass]="i===selctedTowerInd?'tower':'nonActiveTower'" >
         <!-- <span>{{ tower }}</span> -->
         <span>{{ tower }}</span>
-        <i class="ph ph-caret-circle-down dropdown-icon"></i>
+        <i
+          *ngIf="i === selctedTowerInd && open; else closedIcon"
+          class="ph ph-caret-circle-up dropdown-icon"
+        ></i>
+        <ng-template #closedIcon>
+          <i class="ph ph-caret-circle-down dropdown-icon"></i>
+        </ng-template>
       </div>
     </div>
 
@@ -31,3 +39,10 @@
     </div>
   </div>
 </div>
+  
+</div>
+
+
+
+
+

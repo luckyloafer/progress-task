@@ -3,7 +3,7 @@
   <input placeholder="Search for Quality Package" type="search" />
 </div>
 
-<div class="package-cont">
+<div style="overflow-y: scroll;scrollbar-width: none; padding:10px 0px;height: calc(100% - 180px)" class="package-cont">
   <div *ngFor="let packageItem of qualityPackages; let i = index" >
     <div [ngClass]="i==selectedPackageIndex ? 'active-package':'non-active-package' " (click)="selectPackage(packageItem,i)">
       <div class="package-name">
