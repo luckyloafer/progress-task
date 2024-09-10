@@ -1,0 +1,20 @@
+<div class="searchCont">
+  <i class="ph ph-magnifying-glass searchIcon"></i>
+  <input placeholder="Search for Quality Package" type="search" />
+</div>
+
+<div class="package-cont">
+  <div *ngFor="let packageItem of qualityPackages; let i = index" >
+    <div [ngClass]="i==selectedPackageIndex ? 'active-package':'non-active-package' " (click)="selectPackage(packageItem,i)">
+      <div class="package-name">
+        <span > QP-TW-Shuttering-{{ i }} </span>
+        <span >
+          {{ packageItem }}
+        </span>
+      </div>
+      
+        <i class="ph ph-bookmark-simple bookmarkIcon"></i>
+      
+    </div>
+  </div>
+</div>

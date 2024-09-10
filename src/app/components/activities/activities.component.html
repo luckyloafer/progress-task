@@ -1,0 +1,33 @@
+<div class="searchCont">
+  <i class="ph ph-magnifying-glass searchIcon"></i>
+  <input placeholder="Search Activities" type="search" />
+</div>
+
+<div class="towers-cont">
+  <div *ngFor="let tower of towers; let i = index">
+    <!-- <div (click)="toggleDropdown(i)"> -->
+    <div (click)="toggleDropdown(i, tower)">
+      <div class="tower">
+        <!-- <span>{{ tower }}</span> -->
+        <span>{{ tower }}</span>
+        <i class="ph ph-caret-circle-down dropdown-icon"></i>
+      </div>
+    </div>
+
+    <div *ngIf="i === selctedTowerInd && open">
+      <!-- <div *ngFor="let activity of activities; let j=index"> -->
+      <div *ngFor="let activity of activities; let j = index">
+        <!-- <span (click)="selectTowerActivity(tower,activity,i)">{{activity}}</span> -->
+        <!-- <div [ngClass]="j==selectedActivityIndex ? 'activityDiv': 'notActivityDiv'"  (click)="selectTowerActivity(tower,activity,i,j)"> -->
+        <div
+          (click)="selectTowerActivity(j, activity)"
+          [ngClass]="
+            j === selectedActivityInd ? 'activityDiv' : 'notActivityDiv'
+          "
+        >
+          <span>{{ activity }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

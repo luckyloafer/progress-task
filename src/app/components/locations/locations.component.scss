@@ -1,0 +1,104 @@
+.searchCont {
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  padding: 6px;
+  display: flex;
+  gap: 8px;
+  font-family: sans-serif;
+  padding-left: 8px;
+  width: 50%;
+}
+
+.searchIcon {
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+input {
+  border: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+
+  background-color: rgb(173, 193, 246);
+  align-items: center;
+}
+
+.heading1,
+.heading2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.heading1 {
+  width: 70%;
+  border-right: 1px solid;
+}
+
+.heading2 {
+  width: 30%;
+}
+
+span {
+  display: inline-block;
+  text-align: center;
+}
+
+.loctaions-cont {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  border-radius: 5px;
+  //overflow: hidden;
+  border: 1px solid;
+}
+.locationName {
+  //width: 100%;
+  padding: 10px;
+  background-color: rgb(238, 237, 237);
+  border-bottom: 1px solid;
+  padding-right: 0;
+  span{
+    display: inline-block;
+    width: auto;
+  }
+}
+.sublocation {
+  display: flex;
+  width: 100%;
+  border: 1px solid;
+  border-left: 0;
+  background-color: gray;
+}
+.sublocationName {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.sublocationName {
+  width: 70%;
+  // background-color: lightgray;
+}
+.count {
+  width: 20%;
+  display: flex;
+  color: lightblue;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid;
+}

@@ -1,0 +1,88 @@
+.searchCont {
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  padding: 6px;
+  display: flex;
+  gap: 8px;
+  font-family: sans-serif;
+  padding-left: 8px;
+  position: sticky;
+}
+
+.searchIcon {
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+input {
+  border: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  width: 100%;
+}
+input:focus {
+  outline: none;
+}
+
+.towers-cont {
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 7px;
+
+  .tower {
+    background-color: #e2eaf4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #bad6f8;
+    border-radius: 5px;
+    cursor: pointer;
+    span {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .dropdown-icon {
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+
+  .activityDiv{
+    background-color: #4999fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 15px;
+    border: 1px solid #bad6f8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .notActivityDiv{
+    background-color: #f3f6f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 15px;
+    border: 1px solid #bad6f8;
+    cursor: pointer;
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .notActivityDiv:hover{
+    background-color: azure;
+  }
+}

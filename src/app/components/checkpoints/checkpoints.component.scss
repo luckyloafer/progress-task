@@ -1,0 +1,62 @@
+:host {
+  display: flex;
+  flex-direction: column; 
+  flex: 1;
+}
+
+.check-points-header {
+  height: 56px;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid gray;
+  box-shadow: 0px 1px 3px gray;
+  .heading {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.check-points-cont {
+  display: flex;
+  //flex: 1;
+  // height: 80vh;
+  // padding: 10px;
+  // padding-top: 5px;
+  // width: 100%;
+  //padding-right: 0;
+}
+
+.check-points-cont div:first-child {
+ // flex: 2;
+ //flex: 0.2;
+ width: 20vw;
+  padding: 10px;
+ // border-right: 1px solid gray;
+  height: 100%;
+}
+.check-points-cont div:nth-child(3) {
+  //flex: 0.2;
+  width: 20vw;
+  padding: 5px;
+ // border-right: 1px solid gray;
+  height: 100%;
+  padding: 10px;
+}
+.check-points-cont div:nth-child(5) {
+  //flex: 0.2;
+  width: 20vw;
+  padding: 5px;
+ // border-right: 1px solid gray;
+  height: 100%;
+  padding: 10px;
+}
+.check-points-cont div:nth-child(7) {
+  //flex: 0.2;
+  flex-grow: 1;
+  //padding: 5px;
+  height: 100%;
+  padding: 10px;
+  //border-right: 1px solid gray;
+  //padding-right: 0;
+}

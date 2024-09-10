@@ -1,0 +1,24 @@
+<div class="check-points-header">
+  <span class="heading">Project Check Points</span>
+</div>
+<div class="check-points-cont">
+  <div>
+    <app-activities> </app-activities>
+  </div>
+  <div  style=" height: 83vh;border-left: 1px solid;"></div>
+  <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1">
+    <app-quality-package></app-quality-package>
+  </div>
+  <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1" style="height: 83vh;border-left: 1px solid;"></div>
+  <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1">
+    <app-location-types ></app-location-types>
+  </div>
+
+  <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1" style="height: 83vh;border-left: 1px solid;"></div>
+  <div  *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1 && selectedLocationTypeInd!==-1" 
+  >
+    <app-locations></app-locations>
+  </div>
+</div>
+
+<!-- *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1 && selectedLocationTypeInd!==-1"  -->
