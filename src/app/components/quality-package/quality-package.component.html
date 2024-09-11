@@ -1,15 +1,15 @@
 <div class="searchCont">
   <i class="ph ph-magnifying-glass searchIcon"></i>
-  <input placeholder="Search for Quality Package" type="search" />
+  <input [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange($event)" placeholder="Search for Quality Package" type="search" />
 </div>
 
 <div style="overflow-y: scroll;scrollbar-width: none; padding:10px 0px;height: calc(100% - 180px)" class="package-cont">
-  <div *ngFor="let packageItem of qualityPackages; let i = index" >
-    <div [ngClass]="i==selectedPackageIndex ? 'active-package':'non-active-package' " (click)="selectPackage(packageItem,i)">
+  <div *ngFor="let packageItem of filteredQualityPackages; let i = index" >
+    <div [ngClass]="i==selectedPackageIndex ? 'active-package':'non-active-package' " (click)="selectPackage(packageItem.p2,i,packageItem.packageId)">
       <div class="package-name">
         <span > QP-TW-Shuttering-{{ i }} </span>
         <span >
-          {{ packageItem }}
+          {{ packageItem.p2 }}
         </span>
       </div>
       

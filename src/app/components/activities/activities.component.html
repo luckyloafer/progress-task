@@ -2,16 +2,17 @@
 
 <div class="searchCont">
   <i class="ph ph-magnifying-glass searchIcon"></i>
-  <input placeholder="Search Activities" type="search" />
+  <input [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange($event)" placeholder="Search Activities" type="search" />
 </div>
 
+
 <div style="overflow-y: scroll;scrollbar-width: none; padding:10px 0px;height: calc(100% - 180px)" class="towers-cont">
-  <div  *ngFor="let tower of towers; let i = index">
+  <div  *ngFor="let tower of filteredTowers; let i = index">
     <!-- <div (click)="toggleDropdown(i)"> -->
-    <div  (click)="toggleDropdown(i, tower)">
+    <div  (click)="toggleDropdown(i, tower.towerName,tower.id)">
       <div [ngClass]="i===selctedTowerInd?'tower':'nonActiveTower'" >
         <!-- <span>{{ tower }}</span> -->
-        <span>{{ tower }}</span>
+        <span>{{ tower.towerName }}</span>
         <i
           *ngIf="i === selctedTowerInd && open; else closedIcon"
           class="ph ph-caret-circle-up dropdown-icon"
@@ -24,16 +25,16 @@
 
     <div *ngIf="i === selctedTowerInd && open">
       <!-- <div *ngFor="let activity of activities; let j=index"> -->
-      <div *ngFor="let activity of activities; let j = index">
+      <div  *ngFor="let activity of activities; let j = index">
         <!-- <span (click)="selectTowerActivity(tower,activity,i)">{{activity}}</span> -->
         <!-- <div [ngClass]="j==selectedActivityIndex ? 'activityDiv': 'notActivityDiv'"  (click)="selectTowerActivity(tower,activity,i,j)"> -->
-        <div
-          (click)="selectTowerActivity(j, activity)"
+        <div 
+          (click)="selectTowerActivity(j, activity.activityName,activity.activityId)"
           [ngClass]="
             j === selectedActivityInd ? 'activityDiv' : 'notActivityDiv'
           "
         >
-          <span>{{ activity }}</span>
+          <span>{{ activity.activityName }}</span>
         </div>
       </div>
     </div>

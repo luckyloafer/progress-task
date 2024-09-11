@@ -1,13 +1,13 @@
 <div class="searchCont">
     <i class="ph ph-magnifying-glass searchIcon"></i>
-    <input placeholder="Search for Location Types" type="search" />
+    <input [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange($event)" placeholder="Search for Location Types" type="search" />
   </div>
   
   <div style="overflow-y: scroll;scrollbar-width: none; padding:10px 0px;height: calc(100% - 180px)" class="locationTypes-cont">
-    <div *ngFor="let locationType of locationTypes; let i = index">
-      <div [ngClass]="i==selectedLocationInd ?'active-location': 'non-active-location' " (click)="selectLocationType(locationType,i)">
+    <div *ngFor="let locationType of filteredLocationTypes; let i = index">
+      <div [ngClass]="i==selectedLocationInd ?'active-location': 'non-active-location' " (click)="selectLocationType(locationType.locationType,i,locationType.locationTypeId)">
           <span >
-            {{ locationType }}
+            {{ locationType.locationType }}
           </span>
         
       </div>

@@ -32,7 +32,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  margin-top: 7px;
+  //margin-top: 1px;
   //overflow-y: scroll;
   .tower {
     background-color: #d2e2f6;
@@ -41,7 +41,7 @@ input:focus {
     align-items: center;
     padding: 10px;
     border: 1px solid #bad6f8;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     cursor: pointer;
     span {
       font-size: 16px;
@@ -105,4 +105,26 @@ input:focus {
   .notActivityDiv:hover{
     background-color: azure;
   }
+}
+
+
+@keyframes blurIn {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.blur-animation {
+  animation: blurIn 0.4s ease-out forwards;
+}
+
+.content {
+  filter: blur(0);
+  opacity: 1;
+  transition: filter 0.4s ease-out, opacity 0.4s ease-out;
 }

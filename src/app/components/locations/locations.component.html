@@ -10,7 +10,7 @@
 
 <div class="searchCont">
   <i class="ph ph-magnifying-glass searchIcon"></i>
-  <input placeholder="Search for Locations" type="search" />
+  <input [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange($event)" placeholder="Search for Locations" type="search" />
 </div>
 
 <div style="height: calc(100% - 190px)" class="loctaions-cont">
@@ -23,7 +23,7 @@
     </div>
   </div>
   <div style="overflow-y: scroll; scrollbar-width: none">
-    <ng-container *ngFor="let location of locations; let i = index">
+    <ng-container *ngFor="let location of filteredLocations; let i = index">
       <div class="locationName">
         <span>{{ location.locationName }}</span>
       </div>

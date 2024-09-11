@@ -9,7 +9,7 @@ import { ActivitiesComponent } from './components/activities/activities.componen
 import { QualityPackageComponent } from './components/quality-package/quality-package.component';
 import { LocationTypesComponent } from './components/location-types/location-types.component';
 import { LocationsComponent } from './components/locations/locations.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { LocationsComponent } from './components/locations/locations.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

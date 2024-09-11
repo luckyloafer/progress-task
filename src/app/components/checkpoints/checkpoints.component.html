@@ -5,23 +5,23 @@
 </div>
 <div style="height: 100vh" class="check-points-cont">
   <div  >
-    <app-activities> </app-activities>
+    <app-activities class="content blur-animation"> </app-activities>
   </div>
   <div  style=" height: 100vh;border-left: 1px solid;"></div>
   <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1">
-    <app-quality-package></app-quality-package>
+    <app-quality-package class="content blur-animation"></app-quality-package>
   </div>
   <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1" style="height: 100vh;border-left: 1px solid;"></div>
   <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1">
-    <app-location-types ></app-location-types>
+    <app-location-types class="content blur-animation"></app-location-types>
   </div>
 
   <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1" style="height: 100vh;border-left: 1px solid;"></div>
   <div  *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1 && selectedLocationTypeInd!==-1" 
   >
-    <app-locations></app-locations>
+    <app-locations class="content blur-animation"></app-locations>
   </div>
 </div>
   
 </div>
-<!-- *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1 && selectedLocationTypeInd!==-1"  -->
+
