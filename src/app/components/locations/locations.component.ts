@@ -34,7 +34,6 @@ export class LocationsComponent implements OnInit {
       console.log(this.locations);
     });
     this.checkPointsService.selectedActivity.subscribe((val) => {
-      //this.selectedPackageInd = val.index;
       this.locations = this.checkPointsService.getLocations();
       this.filteredLocations = this.locations
     });
@@ -51,15 +50,11 @@ export class LocationsComponent implements OnInit {
       this.locationType = val.locationType;
     });
 
-    //this.locations = this.checkPointsService.getLocations();
     
   }
 
   filterLocationTypes(){
     if(this.searchTerm){
-      //this.filteredLocationTypes = this.checkPointsService.getFilteredPackages(this.searchTerm);
-      //this.filteredLocationTypes = this.checkPointsService.getFilteredLocationTypes(this.searchTerm)
-      //this.filteredLocations = 
       this.filteredLocations=this.checkPointsService.getFilteredLocations(this.searchTerm)
     }
     else{
@@ -70,8 +65,7 @@ export class LocationsComponent implements OnInit {
     this.searchTerm = searchTerm;
     this.filterLocationTypes();
     this.checkPointsService.resetLocation();
-    //this.selectedPackageIndex=-1;
-    //this.selectedLocationInd=-1
+    
   }
 
 }

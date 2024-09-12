@@ -6,9 +6,9 @@ interface selectedLocationType {
   locationType: string;
 }
 
-interface locationType{
-  locationTypeId:string
-  locationType:string;
+interface locationType {
+  locationTypeId: string;
+  locationType: string;
 }
 
 @Component({
@@ -19,58 +19,47 @@ interface locationType{
 export class LocationTypesComponent implements OnInit {
   constructor(private checkPointsService: CheckPointsService) {}
 
-  locationTypes!:locationType[]
+  locationTypes!: locationType[];
   selectedPackageInd!: number;
   selectedLocationInd: number = -1;
   searchTerm: string = '';
-  filteredLocationTypes!:locationType[]
+  filteredLocationTypes!: locationType[];
 
   ngOnInit(): void {
     this.checkPointsService.selectedPackage.subscribe((val) => {
       this.selectedPackageInd = val.index;
-      console.log(this.checkPointsService.getActivity().activity)
-      this.locationTypes = this.checkPointsService.getLocationTypes();
-      this.filteredLocationTypes = this.locationTypes
-      this.selectedLocationInd=-1;
-      this.checkPointsService.resetLocationType()
-    });
-    this.checkPointsService.selectedActivity.subscribe((val) => {
-      //this.selectedPackageInd = val.index;
-      this.selectedPackageInd=-1;
+      console.log(this.checkPointsService.getActivity().activity);
       this.locationTypes = this.checkPointsService.getLocationTypes();
       this.filteredLocationTypes = this.locationTypes;
-      this.selectedLocationInd=-1;
+      this.selectedLocationInd = -1;
+      this.checkPointsService.resetLocationType();
+    });
+    this.checkPointsService.selectedActivity.subscribe((val) => {
+      this.selectedPackageInd = -1;
+      this.locationTypes = this.checkPointsService.getLocationTypes();
+      this.filteredLocationTypes = this.locationTypes;
+      this.selectedLocationInd = -1;
       this.checkPointsService.resetLocationType();
     });
   }
 
-  filterLocationTypes(){
-    if(this.searchTerm){
-      //this.filteredLocationTypes = this.checkPointsService.getFilteredPackages(this.searchTerm);
-      this.filteredLocationTypes = this.checkPointsService.getFilteredLocationTypes(this.searchTerm)
-    }
-    else{
-      this.filteredLocationTypes = this.locationTypes
+  filterLocationTypes() {
+    if (this.searchTerm) {
+      this.filteredLocationTypes =
+        this.checkPointsService.getFilteredLocationTypes(this.searchTerm);
+    } else {
+      this.filteredLocationTypes = this.locationTypes;
     }
   }
   onSearchTermChange(searchTerm: string) {
     this.searchTerm = searchTerm;
     this.filterLocationTypes();
     this.checkPointsService.resetLocationType();
-    //this.selectedPackageIndex=-1;
-    this.selectedLocationInd=-1
+    this.selectedLocationInd = -1;
   }
 
-  selectLocationType(location: string, index: number,locationTypeId:string) {
+  selectLocationType(location: string, index: number, locationTypeId: string) {
     this.selectedLocationInd = index;
-
-    // this.selectedLocationType = {
-    //   index: index,
-    //   locationType: location,
-    // };
-
-    // this.selectedLocationTypeChange.emit(this.selectedLocationType);
-
-    this.checkPointsService.selectLocationType(index, location,locationTypeId);
+    this.checkPointsService.selectLocationType(index, location, locationTypeId);
   }
 }

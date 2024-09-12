@@ -31,10 +31,7 @@ export class QualityPackageComponent implements OnInit {
   filteredQualityPackages!:packageType[]
 
   ngOnInit(): void {
-    // this.checkPointsService.selectedTower.subscribe((val) => {
-    //   this.selectedTowerInd = val.index;
-    // });
-
+    
     this.checkPointsService.selectedActivity.subscribe((val) => {
       this.selectedActivityInd = val.index;
       this.qualityPackages = this.checkPointsService.getPackages();
@@ -44,8 +41,6 @@ export class QualityPackageComponent implements OnInit {
       this.checkPointsService.resetPackage();
     });
 
-    // this.qualityPackages = this.checkPointsService.getPackages();
-    // console.log(this.qualityPackages)
   }
 
   filterPackages(){
@@ -64,13 +59,6 @@ export class QualityPackageComponent implements OnInit {
   }
 
   selectPackage(p2: string, index: number,packageId:string) {
-    // this.selectedPackageIndex = index;
-    // this.selectedPackage = {
-    //   index: index,
-    //   heading: 'QP-TW-Shuttering-' + index.toString(),
-    //   package: packageItem,
-    // };
-    // this.selectedPackageChange.emit(this.selectedPackage);
     console.log(packageId)
     this.selectedPackageIndex=index;
     const p1 = 'QP-TW-Shuttering-' + index.toString()

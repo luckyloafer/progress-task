@@ -98,6 +98,8 @@ span {
 .sublocationName {
   width: 70%;
   // background-color: lightgray;
+  display: flex;
+  gap: 4px;
 }
 .count {
   width: 30%;
@@ -107,4 +109,8 @@ span {
   justify-content: center;
   border-left: 1px solid;
   padding: 10px;
+  span{
+    color: lightblue;
+    font-weight: 600;
+  }
 }

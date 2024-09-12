@@ -237,27 +237,22 @@ export class CheckPointsService {
   }
 
   getFilteredTowers(searchTerm: string) {
-    // Normalize the search term by trimming and converting to lowercase
     const normalizedSearchTerm = searchTerm
       .trim()
       .replace(/\s+/g, ' ')
       .toLowerCase();
   
-    // Filter the data based on the normalized search term
     const filteredData = this.data.filter((val) =>
       val.activities.some((activity) => {
-        // Normalize the activity name
         const normalizedActivityName = activity.activity
           .trim()
           .replace(/\s+/g, ' ')
           .toLowerCase();
   
-        // Check if the normalized activity name includes the normalized search term
         return normalizedActivityName.includes(normalizedSearchTerm);
       })
     );
   
-    // Map the filtered data to the desired format
     this.filteredTowers = filteredData.map((val) => ({
       id: val.id,
       towerName: val.towerName,
@@ -271,23 +266,19 @@ export class CheckPointsService {
     const towerId = this.selectedTowerSubject.getValue().towerId;
     const activityId = this.selectedActivitySubject.getValue().activityId;
 
-    // Convert search term to lowercase
     const lowerCaseSearchTerm = searchTerm
       .trim()
       .replace(/\s+/g, ' ')
       .toLowerCase();
 
-    // Find the tower by ID
     const tower = this.data.find((tower) => tower.id === towerId);
 
     if (tower) {
-      // Find the activity by ID within the tower
       const activity = tower.activities.find(
         (activity) => activity.id === activityId
       );
 
       if (activity) {
-        // Filter packages that match the searchTerm (in lowercase)
         this.filteredPackages = activity.packages
           .filter((pkg) => {
             const normalizedPackageName = pkg.package
@@ -299,18 +290,15 @@ export class CheckPointsService {
           .map((pkg) => {
             return {
               packageId: pkg.id,
-              //p1?: pkg.p1 || '', // Assuming you might want p1 to be optional
               p2: pkg.package,
             };
           });
 
-        console.log(this.filteredPackages); // Log the filtered packages
+        console.log(this.filteredPackages); 
       } else {
-        // No matching activity found
         this.filteredPackages = [];
       }
     } else {
-      // No matching tower found
       this.filteredPackages = [];
     }
 
@@ -320,7 +308,6 @@ export class CheckPointsService {
   getActivities(towerId: string) {
     console.log(towerId);
     const filteredData = this.data.find((tower) => tower.id === towerId);
-    //console.log(data);
     if (!filteredData) {
       this.activities = [];
       return this.activities;
@@ -341,7 +328,6 @@ export class CheckPointsService {
     console.log(activityId);
     console.log(towerInd);
     console.log(towerInd);
-    //(activityInd)
     if (towerInd !== -1 && activityInd !== -1) {
       const filteredData = this.data
         .find((tower) => towerId === tower.id)
@@ -351,15 +337,12 @@ export class CheckPointsService {
         return this.packages;
       }
 
-      //this.packages = filteredData?.
-      //console.log(filteredData)
       console.log(filteredData);
 
       this.packages = filteredData.packages.map((val) => {
         return { packageId: val.id, p2: val.package, p1: '' };
       });
     }
-    //console.log(this.packages);
     return this.packages;
   }
 
@@ -372,23 +355,19 @@ export class CheckPointsService {
     const packageId = this.selectedPackageSubject.getValue().packageId;
 
     if (towerId && activityId && packageId) {
-      // Find the tower based on the selected towerId
       const selectedTower = this.data.find((tower) => tower.id === towerId);
 
       if (selectedTower) {
-        // Find the activity within the selected tower based on the selected activityId
         const selectedActivity = selectedTower.activities.find(
           (activity) => activity.id === activityId
         );
 
         if (selectedActivity) {
-          // Find the package within the selected activity based on the selected packageId
           const selectedPackage = selectedActivity.packages.find(
             (pkg) => pkg.id === packageId
           );
 
           if (selectedPackage) {
-            // Map and return the locationTypes from the selected package
             this.locationTypes = selectedPackage.locationTypes.map(
               (locationType) => {
                 return {
@@ -398,13 +377,13 @@ export class CheckPointsService {
               }
             );
           } else {
-            this.locationTypes = []; // No matching package found
+            this.locationTypes = []; 
           }
         } else {
-          this.locationTypes = []; // No matching activity found
+          this.locationTypes = []; 
         }
       } else {
-        this.locationTypes = []; // No matching tower found
+        this.locationTypes = []; 
       }
     }
 
@@ -416,29 +395,24 @@ export class CheckPointsService {
     const activityId = this.selectedActivitySubject.getValue().activityId;
     const packageId = this.selectedPackageSubject.getValue().packageId;
   
-    // Convert search term to lowercase
     const lowerCaseSearchTerm = searchTerm
       .trim()
       .replace(/\s+/g, ' ')
       .toLowerCase();
   
-    // Find the tower by ID
     const selectedTower = this.data.find((tower) => tower.id === towerId);
   
     if (selectedTower) {
-      // Find the activity by ID within the tower
       const selectedActivity = selectedTower.activities.find(
         (activity) => activity.id === activityId
       );
   
       if (selectedActivity) {
-        // Find the package by ID within the activity
         const selectedPackage = selectedActivity.packages.find(
           (pkg) => pkg.id === packageId
         );
   
         if (selectedPackage) {
-          // Filter location types that match the search term
           this.filteredLocationTypes = selectedPackage.locationTypes
             .filter((locationType) => {
               const normalizedLocationType = locationType.locationType
@@ -448,17 +422,17 @@ export class CheckPointsService {
               return normalizedLocationType.includes(lowerCaseSearchTerm);
             })
             .map((locationType) => ({
-              locationTypeId: locationType.id, // Ensure this matches your data structure
+              locationTypeId: locationType.id, 
               locationType: locationType.locationType,
             }));
         } else {
-          this.filteredLocationTypes = []; // No matching package found
+          this.filteredLocationTypes = []; 
         }
       } else {
-        this.filteredLocationTypes = []; // No matching activity found
+        this.filteredLocationTypes = []; 
       }
     } else {
-      this.filteredLocationTypes = []; // No matching tower found
+      this.filteredLocationTypes = []; 
     }
   
     return this.filteredLocationTypes;
@@ -491,37 +465,31 @@ export class CheckPointsService {
     const packageId = this.selectedPackageSubject.getValue().packageId;
     const locationTypeId = this.selectedLocationTypeSubject.getValue().locationTypeId;
   
-    // Normalize the search term by trimming and converting to lowercase
     const normalizedSearchTerm = searchTerm
       .trim()
       .replace(/\s+/g, ' ')
       .toLowerCase();
   
-    // Find the tower by ID
     const selectedTower = this.data.find((tower) => tower.id === towerId);
   
     if (selectedTower) {
-      // Find the activity by ID within the tower
       const selectedActivity = selectedTower.activities.find(
         (activity) => activity.id === activityId
       );
   
       if (selectedActivity) {
-        // Find the package by ID within the activity
         const selectedPackage = selectedActivity.packages.find(
           (pkg) => pkg.id === packageId
         );
   
         if (selectedPackage) {
-          // Find the location type by ID within the package
           const selectedLocationType = selectedPackage.locationTypes.find(
             (locType) => locType.id === locationTypeId
           );
   
           if (selectedLocationType) {
-            // Filter locations based on the search term
             this.locations = selectedLocationType.locations.filter((location) => {
-              // Normalize the sublocations and check if any include the search term
+              
               return location.sublocations.some((subLocation) => {
                 const normalizedSubLocation = subLocation
                   .trim()
@@ -531,16 +499,16 @@ export class CheckPointsService {
               });
             });
           } else {
-            this.locations = []; // No matching location type found
+            this.locations = []; 
           }
         } else {
-          this.locations = []; // No matching package found
+          this.locations = []; 
         }
       } else {
-        this.locations = []; // No matching activity found
+        this.locations = []; 
       }
     } else {
-      this.locations = []; // No matching tower found
+      this.locations = []; 
     }
   
     return this.locations;
