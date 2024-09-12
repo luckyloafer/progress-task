@@ -67,6 +67,1086 @@ export const data: Tower[] = [
         ],
       },
       {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 'activity-1',
+        activity: 'Shuttering',
+        packages: [
+          {
+            id: 'package-1',
+            package: 'Slab & wall shuttering - Mivan0',
+            locationTypes: [
+              {
+                id: 'locationType-1',
+                locationType: 'Flat',
+                locations: [
+                  { id: 'location-1', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-2', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-3', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-4', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-5', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-6', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-7', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-8', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-2',
+                locationType: 'Flat Column',
+                locations: [
+                  { id: 'location-9', locationName: 'Column C1', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-10', locationName: 'Column C2', sublocations: ['G11', 'G12', 'G13'] },
+                  { id: 'location-11', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-12', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-13', locationName: 'Flat 101', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-14', locationName: 'Flat 102', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+          {
+            id: 'package-2',
+            package: 'Slab & wall shuttering - Mivan1',
+            locationTypes: [
+              {
+                id: 'locationType-3',
+                locationType: 'Flat 2',
+                locations: [
+                  { id: 'location-15', locationName: 'Flat 201', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-16', locationName: 'Flat 202', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+              {
+                id: 'locationType-4',
+                locationType: 'Column 2',
+                locations: [
+                  { id: 'location-17', locationName: 'Column C3', sublocations: ['G01', 'G02', 'G03'] },
+                  { id: 'location-18', locationName: 'Column C4', sublocations: ['G01', 'G02', 'G03'] },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
         id: 'activity-2',
         activity: 'Shuttering2',
         packages: [

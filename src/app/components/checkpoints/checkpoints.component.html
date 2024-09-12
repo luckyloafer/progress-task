@@ -7,16 +7,16 @@
   <div  >
     <app-activities class="content blur-animation"> </app-activities>
   </div>
-  <div  style=" height: 100vh;border-left: 1px solid;"></div>
+  <div  class="division"></div>
   <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1">
     <app-quality-package class="content blur-animation"></app-quality-package>
   </div>
-  <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1" style="height: 100vh;border-left: 1px solid;"></div>
+  <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1" class="division"></div>
   <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1">
     <app-location-types class="content blur-animation"></app-location-types>
   </div>
 
-  <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1" style="height: 100vh;border-left: 1px solid;"></div>
+  <div *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1" class="division"></div>
   <div  *ngIf="selectedTowerInd!==-1 && selectedActivityInd!==-1 && selectedPackageInd!==-1 && selectedLocationTypeInd!==-1" 
   >
     <app-locations class="content blur-animation"></app-locations>

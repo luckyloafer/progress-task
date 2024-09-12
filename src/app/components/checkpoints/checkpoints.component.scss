@@ -61,6 +61,11 @@
   //padding-right: 0;
 }
 
+.division{
+  height: 100vh;
+  border-left: 1px solid lightblue;
+}
+
 @keyframes blurIn {
   0% {
     filter: blur(10px);
